@@ -21,7 +21,9 @@ internal class Program
             Console.WriteLine("2. List Notes");
             Console.WriteLine("3. View Note");
             Console.WriteLine("4. Delete Note");
-            Console.WriteLine("5. Exit");
+            Console.WriteLine("5. Rename Notes");
+            Console.WriteLine("6. Exit");
+
             Console.Write("Choose an option: ");
             string choice = Console.ReadLine();
 
@@ -31,7 +33,9 @@ internal class Program
                 case "2": ListNotes(); break;
                 case "3": ViewNote(); break;
                 case "4": DeleteNote(); break;
-                case "5": return;
+                case "5": RenameNote(); break;
+                case "6": return;
+
                 default: Console.WriteLine("Invalid choice."); break;
             }
 
